@@ -1,0 +1,50 @@
+/**
+ * @flow
+ */
+
+/* eslint-disable */
+'use strict';
+/*::
+import type { ReaderFragment } from 'relay-runtime';
+type prCheckoutController_pullRequest$ref = any;
+import type { FragmentReference } from "relay-runtime";
+declare export opaque type reviewsController_pullRequest$ref: FragmentReference;
+declare export opaque type reviewsController_pullRequest$fragmentType: reviewsController_pullRequest$ref;
+export type reviewsController_pullRequest = {|
+  +id: string,
+  +$fragmentRefs: prCheckoutController_pullRequest$ref,
+  +$refType: reviewsController_pullRequest$ref,
+|};
+export type reviewsController_pullRequest$data = reviewsController_pullRequest;
+export type reviewsController_pullRequest$key = {
+  +$data?: reviewsController_pullRequest$data,
+  +$fragmentRefs: reviewsController_pullRequest$ref,
+};
+*/
+
+const node
+/*: ReaderFragment*/
+= {
+  "kind": "Fragment",
+  "name": "reviewsController_pullRequest",
+  "type": "PullRequest",
+  "metadata": null,
+  "argumentDefinitions": [],
+  "selections": [{
+    "kind": "ScalarField",
+    "alias": null,
+    "name": "id",
+    "args": null,
+    "storageKey": null
+  }, {
+    "kind": "FragmentSpread",
+    "name": "prCheckoutController_pullRequest",
+    "args": null
+  }]
+}; // prettier-ignore
+
+node
+/*: any*/
+.hash = '9d67f9908ab4ed776af5f1ee14f61ccb';
+module.exports = node;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL2xpYi9jb250cm9sbGVycy9fX2dlbmVyYXRlZF9fL3Jldmlld3NDb250cm9sbGVyX3B1bGxSZXF1ZXN0LmdyYXBocWwuanMiXSwibmFtZXMiOlsibm9kZSIsImhhc2giLCJtb2R1bGUiLCJleHBvcnRzIl0sIm1hcHBpbmdzIjoiQUFBQTs7OztBQUlBO0FBRUE7QUFFQTs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBbUJBLE1BQU1BO0FBQUk7QUFBQSxFQUF1QjtBQUMvQixVQUFRLFVBRHVCO0FBRS9CLFVBQVEsK0JBRnVCO0FBRy9CLFVBQVEsYUFIdUI7QUFJL0IsY0FBWSxJQUptQjtBQUsvQix5QkFBdUIsRUFMUTtBQU0vQixnQkFBYyxDQUNaO0FBQ0UsWUFBUSxhQURWO0FBRUUsYUFBUyxJQUZYO0FBR0UsWUFBUSxJQUhWO0FBSUUsWUFBUSxJQUpWO0FBS0Usa0JBQWM7QUFMaEIsR0FEWSxFQVFaO0FBQ0UsWUFBUSxnQkFEVjtBQUVFLFlBQVEsa0NBRlY7QUFHRSxZQUFRO0FBSFYsR0FSWTtBQU5pQixDQUFqQyxDLENBcUJBOztBQUNDQTtBQUFJO0FBQUwsQ0FBZ0JDLElBQWhCLEdBQXVCLGtDQUF2QjtBQUNBQyxNQUFNLENBQUNDLE9BQVAsR0FBaUJILElBQWpCIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBAZmxvd1xuICovXG5cbi8qIGVzbGludC1kaXNhYmxlICovXG5cbid1c2Ugc3RyaWN0JztcblxuLyo6OlxuaW1wb3J0IHR5cGUgeyBSZWFkZXJGcmFnbWVudCB9IGZyb20gJ3JlbGF5LXJ1bnRpbWUnO1xudHlwZSBwckNoZWNrb3V0Q29udHJvbGxlcl9wdWxsUmVxdWVzdCRyZWYgPSBhbnk7XG5pbXBvcnQgdHlwZSB7IEZyYWdtZW50UmVmZXJlbmNlIH0gZnJvbSBcInJlbGF5LXJ1bnRpbWVcIjtcbmRlY2xhcmUgZXhwb3J0IG9wYXF1ZSB0eXBlIHJldmlld3NDb250cm9sbGVyX3B1bGxSZXF1ZXN0JHJlZjogRnJhZ21lbnRSZWZlcmVuY2U7XG5kZWNsYXJlIGV4cG9ydCBvcGFxdWUgdHlwZSByZXZpZXdzQ29udHJvbGxlcl9wdWxsUmVxdWVzdCRmcmFnbWVudFR5cGU6IHJldmlld3NDb250cm9sbGVyX3B1bGxSZXF1ZXN0JHJlZjtcbmV4cG9ydCB0eXBlIHJldmlld3NDb250cm9sbGVyX3B1bGxSZXF1ZXN0ID0ge3xcbiAgK2lkOiBzdHJpbmcsXG4gICskZnJhZ21lbnRSZWZzOiBwckNoZWNrb3V0Q29udHJvbGxlcl9wdWxsUmVxdWVzdCRyZWYsXG4gICskcmVmVHlwZTogcmV2aWV3c0NvbnRyb2xsZXJfcHVsbFJlcXVlc3QkcmVmLFxufH07XG5leHBvcnQgdHlwZSByZXZpZXdzQ29udHJvbGxlcl9wdWxsUmVxdWVzdCRkYXRhID0gcmV2aWV3c0NvbnRyb2xsZXJfcHVsbFJlcXVlc3Q7XG5leHBvcnQgdHlwZSByZXZpZXdzQ29udHJvbGxlcl9wdWxsUmVxdWVzdCRrZXkgPSB7XG4gICskZGF0YT86IHJldmlld3NDb250cm9sbGVyX3B1bGxSZXF1ZXN0JGRhdGEsXG4gICskZnJhZ21lbnRSZWZzOiByZXZpZXdzQ29udHJvbGxlcl9wdWxsUmVxdWVzdCRyZWYsXG59O1xuKi9cblxuXG5jb25zdCBub2RlLyo6IFJlYWRlckZyYWdtZW50Ki8gPSB7XG4gIFwia2luZFwiOiBcIkZyYWdtZW50XCIsXG4gIFwibmFtZVwiOiBcInJldmlld3NDb250cm9sbGVyX3B1bGxSZXF1ZXN0XCIsXG4gIFwidHlwZVwiOiBcIlB1bGxSZXF1ZXN0XCIsXG4gIFwibWV0YWRhdGFcIjogbnVsbCxcbiAgXCJhcmd1bWVudERlZmluaXRpb25zXCI6IFtdLFxuICBcInNlbGVjdGlvbnNcIjogW1xuICAgIHtcbiAgICAgIFwia2luZFwiOiBcIlNjYWxhckZpZWxkXCIsXG4gICAgICBcImFsaWFzXCI6IG51bGwsXG4gICAgICBcIm5hbWVcIjogXCJpZFwiLFxuICAgICAgXCJhcmdzXCI6IG51bGwsXG4gICAgICBcInN0b3JhZ2VLZXlcIjogbnVsbFxuICAgIH0sXG4gICAge1xuICAgICAgXCJraW5kXCI6IFwiRnJhZ21lbnRTcHJlYWRcIixcbiAgICAgIFwibmFtZVwiOiBcInByQ2hlY2tvdXRDb250cm9sbGVyX3B1bGxSZXF1ZXN0XCIsXG4gICAgICBcImFyZ3NcIjogbnVsbFxuICAgIH1cbiAgXVxufTtcbi8vIHByZXR0aWVyLWlnbm9yZVxuKG5vZGUvKjogYW55Ki8pLmhhc2ggPSAnOWQ2N2Y5OTA4YWI0ZWQ3NzZhZjVmMWVlMTRmNjFjY2InO1xubW9kdWxlLmV4cG9ydHMgPSBub2RlO1xuIl19

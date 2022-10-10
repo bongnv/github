@@ -1,0 +1,15 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.deleteMarkerIn = deleteMarkerIn;
+
+/*
+ * Public: utility function for Conflict components to delete a DisplayMarker.
+ */
+function deleteMarkerIn(marker, editor) {
+  editor.setTextInBufferRange(marker.getBufferRange(), '');
+  marker.destroy();
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL2xpYi9tb2RlbHMvY29uZmxpY3RzL21hcmtlci10b29scy5qcyJdLCJuYW1lcyI6WyJkZWxldGVNYXJrZXJJbiIsIm1hcmtlciIsImVkaXRvciIsInNldFRleHRJbkJ1ZmZlclJhbmdlIiwiZ2V0QnVmZmVyUmFuZ2UiLCJkZXN0cm95Il0sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBQUE7OztBQUdPLFNBQVNBLGNBQVQsQ0FBd0JDLE1BQXhCLEVBQWdDQyxNQUFoQyxFQUF3QztBQUM3Q0EsRUFBQUEsTUFBTSxDQUFDQyxvQkFBUCxDQUE0QkYsTUFBTSxDQUFDRyxjQUFQLEVBQTVCLEVBQXFELEVBQXJEO0FBQ0FILEVBQUFBLE1BQU0sQ0FBQ0ksT0FBUDtBQUNEIiwic291cmNlc0NvbnRlbnQiOlsiLypcbiAqIFB1YmxpYzogdXRpbGl0eSBmdW5jdGlvbiBmb3IgQ29uZmxpY3QgY29tcG9uZW50cyB0byBkZWxldGUgYSBEaXNwbGF5TWFya2VyLlxuICovXG5leHBvcnQgZnVuY3Rpb24gZGVsZXRlTWFya2VySW4obWFya2VyLCBlZGl0b3IpIHtcbiAgZWRpdG9yLnNldFRleHRJbkJ1ZmZlclJhbmdlKG1hcmtlci5nZXRCdWZmZXJSYW5nZSgpLCAnJyk7XG4gIG1hcmtlci5kZXN0cm95KCk7XG59XG4iXX0=
