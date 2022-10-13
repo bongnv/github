@@ -1,8 +1,10 @@
+const path = require("path");
+
 module.exports = {
   sourceMaps: "inline",
   plugins: [
     "babel-plugin-relay",
-    "./assert-messages-plugin.js",
+    path.join(__dirname, "./assert-messages-plugin.js"),
     "@atom/babel-plugin-chai-assert-async",
     "@babel/plugin-proposal-class-properties",
 
