@@ -1,12 +1,13 @@
 {
   "name": "github",
-  "main": "./lib/index",
+  "main": "./dist/index",
   "version": "0.36.13",
   "description": "GitHub integration",
   "repository": "https://github.com/atom/github",
   "license": "MIT",
   "scripts": {
     "build": "babel lib -d dist",
+    "prepare": "npm run build",
     "test": "node script/test",
     "test:coverage": "node script/test-coverage",
     "test:coverage:text": "nyc --reporter=text npm run test:coverage",
@@ -16,8 +17,7 @@
     "report:coverage": "nyc report --reporter=cobertura --reporter=html --reporter=lcovonly",
     "lint": "eslint --max-warnings 0 test lib",
     "fetch-schema": "node script/fetch-schema",
-    "relay": "relay-compiler --src ./lib --schema graphql/schema.graphql",
-    "postinstall": "node script/redownload-electron-bins.js"
+    "relay": "relay-compiler --src ./lib --schema graphql/schema.graphql"
   },
   "engines": {
     "atom": ">=1.37.0"
@@ -111,6 +111,15 @@
     "sinon": "9.0.3",
     "test-until": "1.1.1"
   },
+  "files": [
+    "bin",
+    "dist",
+    "graphql",
+    "img",
+    "keymaps",
+    "styles",
+    "menus"
+  ],
   "consumedServices": {
     "status-bar": {
       "versions": {
